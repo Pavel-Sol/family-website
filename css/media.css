@@ -173,7 +173,7 @@
 
     .advantages__item__wrap__title {
         align-self: center;
-        /* padding: 0px 10px; */
+        /* padding: 0px 15px; */
     }
 
     .advantages__item__title {
@@ -190,11 +190,19 @@
     }
 }
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 370px) {
 
     /* header */
     .header__logo__wrap {
         padding: 30px 0px;
         font-size: 28px;
+    }
+
+    .advantages__item__wrap__title {
+        padding: 0px 10px;
+    }
+
+    .advantages__item__number {
+        font-size: 35px;
     }
 }
