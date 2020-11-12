@@ -12,12 +12,24 @@ function openHeader() {
     document.querySelector('.header').classList.remove('hidden')
     document.querySelector('body').classList.add('lock')
 }
-// -------------------------------
+// -------------- offer__slider -----------------
 $(document).ready(function () {
     $(".offer__slider").slick({
         arrows: false,
         dots: true,
         adaptiveHeight: true,
+        // autoplay: true,
+        // autoplaySpeed: 2000,
+        // pauseOnHover: false
+    });
+});
+// --------------------------------------------------------
+$(document).ready(function () {
+    $(".reviews__slider__img").slick({
+        slidesToShow: 7,
+        arrows: true,
+        // adaptiveHeight: true,
+        centerMode: true,
         // autoplay: true,
         // autoplaySpeed: 2000,
         // pauseOnHover: false
