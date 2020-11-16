@@ -23,18 +23,13 @@ $(document).ready(function () {
         // pauseOnHover: false
     });
 });
-// --------------------------------------------------------
-// reviews__slider__img
+// ------------ reviews__slider__img -------------------
 $(document).ready(function () {
     $(".reviews__slider__img").slick({
         slidesToShow: 7,
         arrows: true,
-        // adaptiveHeight: true,
         centerMode: true,
         asNavFor: ".reviews__slider__desc",
-        // autoplay: true,
-        // autoplaySpeed: 2000,
-        // pauseOnHover: false
         responsive: [{
             breakpoint: 1350,
             settings: {
@@ -55,16 +50,15 @@ $(document).ready(function () {
     });
 });
 
-// reviews__slider__desc
+// ------------ reviews__slider__desc -----------------
 $(document).ready(function () {
     $(".reviews__slider__desc").slick({
         slidesToShow: 1,
         arrows: false,
         asNavFor: ".reviews__slider__img",
-        // adaptiveHeight: true,
     });
 });
-// ------------------------------------------------
+// ------------------- staff slider---------------------
 let active = 0
 let item = document.querySelectorAll('.staff__item')
 
@@ -87,3 +81,4 @@ document.querySelector('.staff__arrow-next').onclick = () => {
     }
     item[active].classList.remove('hidden')
 }
+// -------------------------------------------------------

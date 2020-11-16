@@ -199,6 +199,7 @@ h2 {
   padding: 0px 0px 40px 0px;
   transition: all 0.9s ease 0s;
   top: 0;
+  box-shadow: 0px 3px 10px #00204A;
 }
 
 .header.hidden {
@@ -438,6 +439,7 @@ h2 {
   justify-content: center;
   margin: 0px 15px 224px 15px;
   padding: 13px;
+  box-shadow: 0px 3px 10px rgba(0, 32, 74, 1);
 }
 
 .staff__item__title {
@@ -454,6 +456,8 @@ h2 {
   position: absolute;
   left: 50%;
   transform: translate(-50%, 0px);
+  box-shadow: 0px 3px 7px rgba(0, 32, 74, 0.5);
+  border-radius: 50%;
 }
 
 .staff__item_1 .staff__item__img,
