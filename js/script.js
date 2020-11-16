@@ -64,3 +64,26 @@ $(document).ready(function () {
         // adaptiveHeight: true,
     });
 });
+// ------------------------------------------------
+let active = 0
+let item = document.querySelectorAll('.staff__item')
+
+document.querySelector('.staff__arrow-prew').onclick = () => {
+    item[active].classList.add('hidden')
+    if (active + 1 == item.length) {
+        active = 0
+    } else {
+        active++
+    }
+    item[active].classList.remove('hidden')
+}
+
+document.querySelector('.staff__arrow-next').onclick = () => {
+    item[active].classList.add('hidden')
+    if (active == 0) {
+        active = item.length - 1
+    } else {
+        active--
+    }
+    item[active].classList.remove('hidden')
+}

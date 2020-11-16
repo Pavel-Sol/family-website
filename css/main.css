@@ -394,6 +394,27 @@ h2 {
   margin: 0px auto;
   text-align: center;
   padding: 46px 0px 0px 0px;
+  position: relative;
+}
+
+.staff__arrow {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  top: 50%;
+  display: none;
+}
+
+.staff__arrow img {
+  height: 100%;
+}
+
+.staff__arrow-prew {
+  left: 10px;
+}
+
+.staff__arrow-next {
+  right: 10px;
 }
 
 .staff__title {

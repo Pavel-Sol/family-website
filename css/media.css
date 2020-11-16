@@ -183,6 +183,7 @@
     .reviews__slider__img .slick-arrow.slick-next {
         right: 0;
     }
+
 }
 
 @media screen and (max-width: 500px) {
@@ -206,6 +207,15 @@
     .offer__form__button {
         margin: 15px 0px;
         width: 100%;
+    }
+
+    /* staff */
+    .staff__item.hidden {
+        display: none;
+    }
+
+    .staff__arrow {
+        display: block;
     }
 
     /* advantages */
