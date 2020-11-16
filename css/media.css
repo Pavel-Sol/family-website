@@ -258,12 +258,16 @@
     }
 
     /* reviews */
+    .reviews .container {
+        padding: 0px 20px;
+    }
+
     .reviews__slider__desc__item__title {
         font-size: 25px;
     }
 
     .reviews__slider__desc__item__text {
-        margin: 20px 0px 50px 0px;
+        margin: 10px 0px 50px 0px;
         font-size: 18px;
     }
 
