@@ -94,6 +94,20 @@
         display: none;
     }
 
+    /* footer */
+    .footer__content {
+        flex-wrap: wrap;
+    }
+
+    .footer__form {
+        margin: 0px auto 40px auto;
+    }
+
+    .footer__adress {
+        justify-content: center;
+        width: 100%;
+    }
+
 }
 
 @media screen and (max-width: 768px) {
@@ -184,6 +198,22 @@
         right: 0;
     }
 
+    /* footer */
+    .footer__adress {
+        flex-wrap: wrap;
+    }
+
+    .footer__adress-column:nth-child(1) {
+        margin: 0;
+    }
+
+    .footer__adress-column {
+        width: 100%;
+    }
+
+    .footer__adress__item {
+        margin: 0px auto 20px auto;
+    }
 }
 
 @media screen and (max-width: 500px) {
