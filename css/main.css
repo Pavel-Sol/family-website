@@ -206,8 +206,6 @@ h2 {
   top: -150%;
 }
 
-.header__body {}
-
 .header__top {
   display: flex;
   justify-content: space-between;
@@ -242,12 +240,9 @@ h2 {
   align-self: flex-end;
 }
 
-.header__burger__inside {}
-
 .burger.header__burger__inside span {
   background-color: rgba(0, 87, 146, 1);
 }
-
 
 .header__burger__outside {
   position: fixed;
@@ -261,15 +256,11 @@ h2 {
 }
 
 /* nav */
-.header__nav {}
-
 .header__nav__list {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-
-.header__nav__item {}
 
 .header__nav__link {
   font-family: Gilroy-300;
@@ -291,7 +282,6 @@ h2 {
   position: relative;
   overflow: hidden;
 }
-
 
 .offer__slider__item img {
   position: absolute;
@@ -680,8 +670,6 @@ h2 {
   font-family: Gilroy-700;
 }
 
-.blog__articl__item__img {}
-
 .blog__articl__item__img img {
   width: 100%;
   height: 100%;
@@ -746,7 +734,6 @@ h2 {
   margin: 0px 0px 40px 0px;
 }
 
-
 /* reviews__slider__img */
 .reviews__slider__img__item img {
   width: 140px;
@@ -761,8 +748,6 @@ h2 {
 .reviews__slider__img__item:not(.slick-center) img {
   opacity: 0.6;
 }
-
-
 
 .reviews__slider__img {
   position: relative;

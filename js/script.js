@@ -1,4 +1,4 @@
-// бургер---------------
+//------------------ бургер ----------------
 document.querySelector('.header__burger__inside').addEventListener('click', hiddenHeader)
 
 function hiddenHeader() {
@@ -18,9 +18,6 @@ $(document).ready(function () {
         arrows: false,
         dots: true,
         adaptiveHeight: true,
-        // autoplay: true,
-        // autoplaySpeed: 2000,
-        // pauseOnHover: false
     });
 });
 // ------------ reviews__slider__img -------------------
@@ -81,4 +78,41 @@ document.querySelector('.staff__arrow-next').onclick = () => {
     }
     item[active].classList.remove('hidden')
 }
-// -------------------------------------------------------
+
+// ------------------ анимация при скроле --------------------------
+
+let animItems = document.querySelectorAll('._anim-items')
+
+if (animItems.length > 0) {
+    window.addEventListener('scroll', animOnScroll)
+}
+
+function animOnScroll() {
+    for (let i = 0; i < animItems.length; i++) {
+        let animItem = animItems[i]
+        let animItemHeight = animItem.offsetHeight
+        let animItemOffset = offset(animItem).top
+        let animStart = 8
+
+        let animItemPoint = window.innerHeight - animItemHeight / animStart
+        if (animItemHeight > window.innerHeight) {
+            animItemPoint = window.innerHeight - window.innerHeight / animStart
+        }
+
+        if ((pageYOffset > animItemOffset - animItemPoint) && pageYOffset < (animItemOffset + animItemHeight)) {
+            animItem.classList.add('anim-active')
+        }
+    }
+}
+
+
+function offset(el) { // функция из интернета
+    const rect = el.getBoundingClientRect(),
+        scrollLeft = window.pageXOffset || document.documentElement.scrollLeft,
+        scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    return {
+        top: rect.top + scrollTop,
+        left: rect.left + scrollLeft
+    }
+}
+// ------------------------------------------------------------

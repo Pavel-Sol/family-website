@@ -1,4 +1,70 @@
 /* ------------------min-width !!!!------------- */
+@media screen and (min-width: 1350px) {
+
+    /* анимация при скроле */
+    .offer__title {
+        transform: translate(30%, 0px);
+        opacity: 0;
+        transition: all 1s ease 0s;
+    }
+
+    .offer__title.anim-active {
+        transform: translate(0px, 0px);
+        opacity: 1;
+    }
+
+    .offer__form {
+        transform: translate(0px, 30%);
+        opacity: 0;
+        transition: all 1s ease 0s;
+    }
+
+    .offer__form.anim-active {
+        transform: translate(0px, -55px);
+        opacity: 1;
+    }
+
+    .staff__item,
+    .footer__adress {
+        transform: scale(0.7, 0.7);
+        opacity: 0;
+        transition: all 1s ease 0s;
+    }
+
+    .staff__item.anim-active,
+    .footer__adress.anim-active {
+        transform: scale(1, 1);
+        opacity: 1;
+    }
+
+    .blog__title {
+        transform: translate(0px, -30%);
+        opacity: 0;
+        transition: all 1s ease 0s;
+    }
+
+    .blog__title.anim-active {
+        transform: translate(0px, 0px);
+        opacity: 1;
+    }
+
+    .join__title,
+    .join__form,
+    .footer__form {
+        transform: translate(0px, 30%);
+        opacity: 0;
+        transition: all 1s ease 0s;
+    }
+
+    .join__title.anim-active,
+    .join__form.anim-active,
+    .footer__form.anim-active {
+        transform: translate(0px, 0px);
+        opacity: 1;
+    }
+
+}
+
 /* Для отзывчивости кнопок */
 @media screen and (min-width: 992px) {
     .header__nav__link:focus {
@@ -12,7 +78,7 @@
 }
 
 
-/* ------------------max-width !!!!------------- */
+/* ------------------max-width------------- */
 @media screen and (max-width: 1350px) {
 
     /* header */
